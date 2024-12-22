@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/sunny-bday/static/css/main.97213239.css",
+    "main.js": "/sunny-bday/static/js/main.88b81d9d.js",
+    "index.html": "/sunny-bday/index.html",
+    "main.97213239.css.map": "/sunny-bday/static/css/main.97213239.css.map",
+    "main.88b81d9d.js.map": "/sunny-bday/static/js/main.88b81d9d.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.97213239.css",
+    "static/js/main.88b81d9d.js"
+  ]
+}
