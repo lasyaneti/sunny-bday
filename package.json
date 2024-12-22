@@ -48,7 +48,7 @@
       "last 1 safari version"
     ]
   },
-  "homepage": "https://lasyaneti.github.io/sunny-bday",
+  "homepage": "https://lasyaneti.github.io/sunny-bday/",
   "devDependencies": {
     "gh-pages": "^6.2.0"
   }
