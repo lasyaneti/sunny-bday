@@ -1,26 +1,53 @@
-import React from 'react';
-import logo from './logo.svg';
+import React, { useState } from "react";
+import Home from "./Home";
 import './App.css';
 
-function App() {
+const App: React.FC = () => {
+  const [isAuthenticated, setIsAuthenticated] = useState(false);
+  const correctPassword = process.env.REACT_APP_PASSWORD; 
+
+  const handleLogin = (password: string) => {
+    if (password === correctPassword) {
+      setIsAuthenticated(true);
+    } else {
+      alert("Incorrect password!");
+    }
+  };
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="locked-page">
+      {isAuthenticated ? (
+        <Home />
+      ) : (
+        <Login onLogin={handleLogin} />
+      )}
     </div>
   );
-}
+};
+
+const Login: React.FC<{ onLogin: (password: string) => void }> = ({ onLogin }) => {
+  const [password, setPassword] = useState("");
+
+  const handleSubmit = (e: React.FormEvent) => {
+    e.preventDefault();
+    onLogin(password);
+  };
+
+  return (
+    <form className="login-form" onSubmit={handleSubmit}>
+      <h1>hello sunny@hbd.com</h1>
+      <input
+        type="password"
+        value={password}
+        onChange={(e) => setPassword(e.target.value)}
+        placeholder="Enter password"
+        className="text-field"
+      />
+      <button type="submit" className="submit-button">
+        Submit
+      </button>
+    </form>
+  );
+};
 
 export default App;
