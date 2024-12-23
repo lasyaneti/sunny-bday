@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/sunny-bday/static/css/main.97213239.css",
-    "main.js": "/sunny-bday/static/js/main.88b81d9d.js",
+    "main.css": "/sunny-bday/static/css/main.95fdfea3.css",
+    "main.js": "/sunny-bday/static/js/main.6e787606.js",
     "index.html": "/sunny-bday/index.html",
-    "main.97213239.css.map": "/sunny-bday/static/css/main.97213239.css.map",
-    "main.88b81d9d.js.map": "/sunny-bday/static/js/main.88b81d9d.js.map"
+    "main.95fdfea3.css.map": "/sunny-bday/static/css/main.95fdfea3.css.map",
+    "main.6e787606.js.map": "/sunny-bday/static/js/main.6e787606.js.map"
   },
   "entrypoints": [
-    "static/css/main.97213239.css",
-    "static/js/main.88b81d9d.js"
+    "static/css/main.95fdfea3.css",
+    "static/js/main.6e787606.js"
   ]
 }
